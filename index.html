@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            margin :10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    
+    let randomNumber= Math.random() * 3 ;
+    let computerChoice;
+    if(randomNumber > 0 &&  randomNumber <=1){
+         computerChoice = 'Bat'; 
+    }
+    else if(randomNumber >1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+    }
+    else{
+        computerChoice = 'Wicket';
+    }
+    
+    let resultMsg;
+    if( computerChoice === 'Bat'){
+        resultMsg = 'Macth Draw';}
+    else if(computerChoice === 'Ball'){
+        resultMsg = 'You win';}
+     else {
+        resultMsg = 'Bot Win';}
+
+    alert(`You have chosen Bat. Bot have chosen ${computerChoice} and ${resultMsg}`);
+    ">Bat</button>
+
+    <button onclick="
+    
+    randomNumber= Math.random() * 3 ;
+    // computerChoice;
+    if(randomNumber > 0 &&  randomNumber <=1){
+         computerChoice = 'Bat'; 
+    }
+    else if(randomNumber >1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+    }
+    else{
+        computerChoice = 'Wicket';
+    }
+
+    // resultMsg;
+    if( computerChoice === 'Ball'){
+        resultMsg = 'Macth Draw';}
+    else if(computerChoice === 'Bat'){
+        resultMsg = 'Bot Win';}
+     else {
+        resultMsg = 'You Win';}
+
+    alert(`You have chosen Ball. Bot have chosen ${computerChoice} and ${resultMsg}`);
+    ">Ball</button>
+
+    <button onclick="
+    
+    randomNumber= Math.random() * 3 ;
+    // computerChoice;
+    if(randomNumber > 0 &&  randomNumber <=1){
+        computerChoice = 'Bat'; 
+    }
+    else if(randomNumber >1 && randomNumber <= 2){
+        computerChoice = 'Ball';
+    }
+    else{
+        computerChoice = 'Wicket';
+    }
+
+    // resultMsg;
+    if( computerChoice === 'Wicket'){
+        resultMsg = 'Macth Draw';}
+    else if(computerChoice === 'Bat'){
+        resultMsg = 'You win';}
+     else {
+        resultMsg = 'Bot Win';}
+
+    alert(`You have chosen Wicket. Bot have chosen ${computerChoice} and ${resultMsg}`);
+    ">Wicket</button>
+   
+    
+</body>
+</html>
